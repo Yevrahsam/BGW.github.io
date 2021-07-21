@@ -87,6 +87,13 @@ function getMousePos(evt){
     
     user.y = evt.clientY - rect.top - user.height/2;
 }
+canvas.addEventListener("touchmove", getTouchPos);
+
+function getTouchPos(evt){
+    let rect = canvas.getBoundingClientRect();
+    
+    user.y = evt.clientY - rect.top - user.height/2;
+}
 
 // when COM or USER scores, we reset the ball
 function resetBall(){
