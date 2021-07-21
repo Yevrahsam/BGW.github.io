@@ -92,7 +92,7 @@ canvas.addEventListener("touchmove", getTouchPos);
 function getTouchPos(evt){
     let rect = canvas.getBoundingClientRect();
     
-    user.y = evt.clientY - rect.top - user.height;
+    user.y = evt.clientY;
 }
 
 // when COM or USER scores, we reset the ball
