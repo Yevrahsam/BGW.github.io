@@ -507,11 +507,13 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
   .rules-list{
     padding: 200px;
   }
+  #pong{
+    height: 500px;
+  }
 }
 #pong{
   border: 2px solid #ff00fa;
   position: center;
   margin :auto;
   width: 100%;
-  height: 500px;
 }
