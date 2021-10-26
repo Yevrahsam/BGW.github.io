@@ -144,11 +144,11 @@ function update(){
     // change the score of players, if the ball goes to the left "ball.x<0" computer win, else if "ball.x > canvas.width" the user win
     if( ball.x - ball.radius < 0 ){
         com.score++;
-        comScore.play();
+        //comScore.play();
         resetBall();
     }else if( ball.x + ball.radius > canvas.width){
         user.score++;
-        userScore.play();
+        //userScore.play();
         resetBall();
     }
     
