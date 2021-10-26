@@ -163,7 +163,7 @@ function update(){
     // when the ball collides with bottom and top walls we inverse the y velocity.
     if(ball.y - ball.radius < 0 || ball.y + ball.radius > canvas.height){
         ball.velocityY = -ball.velocityY;
-        wall.play();
+        //wall.play();
     }
     
     // we check if the paddle hit the user or the com paddle
@@ -172,7 +172,7 @@ function update(){
     // if the ball hits a paddle
     if(collision(ball,player)){
         // play sound
-        hit.play();
+        //hit.play();
         // we check where the ball hits the paddle
         let collidePoint = (ball.y - (player.y + player.height/2));
         // normalize the value of collidePoint, we need to get numbers between -1 and 1.
@@ -199,11 +199,11 @@ function update2(){
     // change the score of players, if the ball goes to the left "ball.x<0" computer win, else if "ball.x > canvas.width" the user win
     if( ball2.x - ball2.radius < 0 ){
         com.score++;
-        comScore.play();
+        //comScore.play();
         resetBall2();
     }else if( ball2.x + ball2.radius > canvas.width){
         user.score++;
-        userScore.play();
+        //userScore.play();
         resetBall2();
     }
     
@@ -218,7 +218,7 @@ function update2(){
     // when the ball collides with bottom and top walls we inverse the y velocity.
     if(ball2.y - ball2.radius < 0 || ball2.y + ball2.radius > canvas.height){
         ball2.velocityY = -ball2.velocityY;
-        wall.play();
+        //wall.play();
     }
     
     // we check if the paddle hit the user or the com paddle
@@ -227,7 +227,7 @@ function update2(){
     // if the ball hits a paddle
     if(collision(ball2,player)){
         // play sound
-        hit.play();
+        //hit.play();
         // we check where the ball hits the paddle
         let collidePoint = (ball2.y - (player.y + player.height/2));
         // normalize the value of collidePoint, we need to get numbers between -1 and 1.
